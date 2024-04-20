@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>會議室預約系統</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>會議室預約系統</h1>
+
+        <div class="room-form">
+            <h2>預約會議室</h2>
+            <div>
+                <label for="roomName">會議室名稱:</label>
+                <input type="text" id="roomName">
+            </div>
+            <div>
+                <label for="date">日期:</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="startTime">開始時間:</label>
+                <input type="time" id="startTime">
+            </div>
+            <div>
+                <label for="endTime">結束時間:</label>
+                <input type="time" id="endTime">
+            </div>
+            <button onclick="reserveRoom()">預約</button>
+        </div>
+
+        <div class="reservation-list">
+            <h2>預約清單</h2>
+            <ul id="reservationList"></ul>
+            <p>1.跳出預約成功</p>
+            <p>2.把預約資料丟到後端</p>
+        </div>
+    </div>
+
+    <script src="../views/scripts.js"></script>
+</body>
+
+
+</html>

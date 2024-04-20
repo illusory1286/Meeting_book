@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>完整的月曆</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+
+</head>
+
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevBtn">上一月</button>
+            <h2 id="currentMonth"></h2>
+            <button id="nextBtn">下一月</button>
+        </div>
+        <div id="calendar"></div>
+
+        <table id="calendarTable">
+            <thead>
+                <tr id="weekDays"></tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+
+</html>
