@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>會議室預約系統</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -15,28 +16,31 @@
             <h2>預約會議室</h2>
             <div>
                 <label for="roomName">會議室名稱:</label>
-                <input type="text" id="roomName">
+                <input type="text" id="roomName" required>
             </div>
             <div>
                 <label for="date">日期:</label>
-                <input type="date" id="date">
+                <input type="date" id="date" required>
             </div>
             <div>
                 <label for="startTime">開始時間:</label>
-                <input type="time" id="startTime">
+                <input type="time" id="startTime" required>
             </div>
             <div>
                 <label for="endTime">結束時間:</label>
-                <input type="time" id="endTime">
+                <input type="time" id="endTime" required>
             </div>
             <button onclick="reserveRoom()">預約</button>
+
         </div>
 
         <div class="reservation-list">
             <h2>預約清單</h2>
             <ul id="reservationList"></ul>
-            <p>1.跳出預約成功</p>
-            <p>2.把預約資料丟到後端</p>
+            <p>---前端卡控---</p>
+            <p>1.空白資訊不可預約(OK)</p>
+            <p>2.跳出預約成功</p>
+            <p>3.把預約資料丟到後端</p>
         </div>
     </div>
 
